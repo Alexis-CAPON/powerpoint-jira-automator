@@ -1,0 +1,5 @@
+requests
+openai
+python-pptx
+pdf2image
+pillow
