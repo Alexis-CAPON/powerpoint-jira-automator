@@ -18,9 +18,9 @@ limitations under the License.
 # PowerPoint Jira Automator
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub Release](https://img.shields.io/github/v/release/Alexis-CAPON/jira-automator)](https://github.com/Alexis-CAPON/jira-automator/releases/latest)
+[![GitHub Release](https://img.shields.io/github/v/release/Alexis-CAPON/powerpoint-jira-automator)](https://github.com/Alexis-CAPON/powerpoint-jira-automator/releases/latest)
 
-| **[Deployment](deploy/jira-automator/README.md)** |
+| **[Deployment](deploy/powerpoint-jira-automator/README.md)** |
 
 PowerPoint Jira Automator is a script designed to automate Jira operations such as creating, updating, and removing features from an epic using a PowerPoint VISA as a referential document. This enables teams to efficiently manage their Jira workflows based on structured VISA presentations.
 
@@ -56,7 +56,7 @@ Before deploying to production you need to add your AWS secrey and modify them i
 
 ```bash
 # Clone the repository
-git clone https://github.com/Alexis-CAPON/jira-automator.git
+git clone https://github.com/Alexis-CAPON/powerpoint-jira-automator.git
 cd jira-updater
 
 # Build the image
