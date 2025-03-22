@@ -13,12 +13,12 @@ def convert_ppt_to_base64(ppt_path):
         encoded_string = base64.b64encode(ppt_file.read()).decode("utf-8")
     return encoded_string
 
-ppt_path = "/Users/alexis/Dev/scripts/jiraUpdater/VISA_template_jira_autoupdater.pptx"  # Replace with your PPTX file path
+ppt_path = "/your-path/VISA_template_jira_autoupdater.pptx"  # Replace with your PPTX file path
 base64_string = convert_ppt_to_base64(ppt_path)
 
 # Convert the body dict to a JSON string
 body_content = json.dumps({
-    "epic_key": "FDSO-63542",
+    "epic_key": "PROJECT-KEY",
     "pptBase64": base64_string
 })
 
@@ -61,7 +61,7 @@ event = {
     }
 }
 
-json_file = os.path.join("/Users/alexis/Dev/scripts/jiraUpdater/jira-updater/events", "event.json")
+json_file = os.path.join("/your-path/jiraUpdater/jira-updater/events", "event.json")
 
 with open(json_file, "w", encoding="utf-8") as f:
     json.dump(event, f, indent=4, ensure_ascii=False)

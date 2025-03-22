@@ -50,6 +50,7 @@ This is a template for a AWS lambda deployment. You can take the code and modify
 You will need to link this AWS Lambda to your API Gateway.
 
 You will find a powerpoint template in the github, modify it as you wish.
+Before deploying to production you need to add your AWS secrey and modify them in the template.yaml
 
 ### Setup
 
@@ -68,9 +69,9 @@ sam local invoke -e events/event.json -n env.json JiraUpdaterFunction
 sam deploy
 ```
 
-## Configuration
+## Test Configuration
 
-The application requires environment variables to be set for Jira authentication and other configurations.
+To test the application, it requires environment variables to be set for Jira authentication and other configurations.
 Create a `env.json` file in the 'jira-update' directory with the following values:
 
 ```json
